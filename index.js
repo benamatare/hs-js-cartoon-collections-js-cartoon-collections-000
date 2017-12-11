@@ -5,21 +5,21 @@ function dwarfRollCall(dwarves) {
     var num = i + 1;      // Variable for the local postion of the index +1
     dwarves[i] = num + '. ' + dwarves[i];
   } // Edit the array to become i+1 + Dwarves+'space' (For however long the array is)
-  return dwarves.join(" ").toString(); //.join gets rid of the , seperator 
+  return dwarves.join(" ").toString(); //.join gets rid of the , seperator
 
 
 
 //Question 2
 function summonCaptainPlanet(planeteerCalls){
   for (var i = 0; i < planeteerCalls.length; i++){ // Iterate through the array
-      planeteerCalls[i] = planeteerCalls[i].toUpperCase()+'!'; 
+      planeteerCalls[i] = planeteerCalls[i].toUpperCase()+'!';
     } // Edit the array's index to be ALL CAPS + !
     return planeteerCalls;
 }
 
 //Question 3
 function longPlaneteerCalls(words) {
-  for (var i = 0; i < words.length; i++) { //Iterate through the array 
+  for (var i = 0; i < words.length; i++) { //Iterate through the array
     if (words[i].length <= 4) { // If the index's length is less than or equal to 4
       return false;
     } else if (words[i].length >= 4) { // If the index's length is greater than or equal to 4
